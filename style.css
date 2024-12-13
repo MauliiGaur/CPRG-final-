@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.bgimage {
+  background-image: url("images/bgimage.jpg");
+  background-size: cover;
+  }
+  
+
+h1 {
+  font-family: "Arima", serif;
+  font-size: 85px;
+  color: white;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+header {
+  background: #e0d7d4;
+  padding: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+img {
+  display: block;
+  width: 50%;
+  height: 40%;
+  padding-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #964242;
+}
+
+.card {
+  display: flex; 
+  padding: 20px; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.products {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  text-align: center;
+  background: #e0d7d4;
+  padding: 15px;
+  
+}
+
+.products img {
+  width: 100%; 
+  height: auto;
+}
+
+.products h3 {
+  font-size: 20px;
+  margin: 10px ;
+}
+
+.products p {
+  font-size: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #964242;
+  color: white;
+  text-decoration: none;
+  font-size: 20spx;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #c24a4a;
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  
+}
+
+input[type=submit] {
+  background-color: #964242;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  background-color:  #c24a4a;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #e0d7d4;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #e0d7d4;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 3200px) {
+  nav ul.links {
+    justify-content: space-around;
+  }
+  .products {
+    max-width: 350px;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  nav ul.links {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .products {
+    max-width: 100px;
+    max-height: auto;
+  }
+}
